@@ -269,7 +269,7 @@ body {
 /* - select forms */
 
 .select-forms {
-    margin: 0 0 15px;
+    margin: 0 0 13px;
 }
 
 .select-forms form {
@@ -325,10 +325,23 @@ body {
     font-size: 9px;
 }
 
+.s-avto .form-search {
+    right: 22px;
+    bottom: 11px;
+}
+
+.s-tier .form-search {
+    right: 20px;
+    bottom: 9px;
+}
+
+.s-disk .form-search {
+    right: 19px;
+    bottom: 9px;
+}
+
 .form-search {
     position: absolute;
-    right: 17px;
-    bottom: 7px;
     padding: 0;
     border: 0;
     background: none;
@@ -355,7 +368,7 @@ body {
 .s-avto {
     position: relative;
     width: 413px;
-    margin: 0 0 0 5px;
+    margin: 2px 0 0 5px;
     font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 }
 
@@ -383,6 +396,7 @@ body {
 
 .s-avto p {
     margin: 0 0 3px;
+    letter-spacing: .03em;
 }
 
 .s-avto p > label {
@@ -436,11 +450,19 @@ body {
 .s-tier p > select {
     display: inline-block;
     width: 52px;
+    padding-left: 3px;
+}
+
+.s-tier p:nth-child(3) > select {
+    width: 47px;
 }
 
 .sel-delimiter {
-    color: inherit;
+    margin: 0 3px;
+    vertical-align: -3px;
     font: inherit;
+    color: inherit;
+    font-size: 15px;
 }
 
 .s-tier .chb-group {
