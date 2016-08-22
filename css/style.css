@@ -92,7 +92,7 @@ body {
     width: 108px;
     height: 16px;
     margin: 0 2px 0 0;
-    padding: 0 0 0 4px;
+    padding: 0 0 0 5px;
     border: 1px solid #82949c;
     border-radius: 2px;
     font-family: inherit;
@@ -101,15 +101,20 @@ body {
 
 .login-bar button {
     height: 18px;
+    padding: 0 2px;
     border: 0;
     background: none;
+    letter-spacing: .4px;
     cursor: pointer;
+}
+
+.delimiter {
+    margin: 0 -2px 0 -1px;
 }
 
 .delimiter,
 .login-bar button {
     display: inline-block;
-    padding: 0;
     color: #fff;
     font-family: inherit;
     font-size: 11px;
@@ -120,11 +125,17 @@ body {
     outline-style: none;
 }
 
+.forgot {
+    padding: 1px 0;
+    border-bottom: 1px solid #bfbfbf;
+}
+
 .forgot a {
     color: #bfbfbf;
     font-size: 12px;
-    line-height: 18px;
-    text-decoration: underline;
+    letter-spacing: .3px;
+    line-height: 15px;
+    text-decoration: none;
 }
 
 .quick-nav {
@@ -164,7 +175,7 @@ body {
 }
 
 .menu {
-    padding: 0 0 0 127px;
+    padding: 0 0 0 125px;
 }
 
 .menu li {
@@ -173,11 +184,32 @@ body {
 
 .menu li a {
     display: block;
-    padding: 1px 15px 0;
+    padding: 1px 17px 0 21px;
     color: #fff;
     font-size: 14px;
     line-height: 25px;
+    letter-spacing: .1px;
     text-decoration: none;
+}
+
+.menu li:nth-child(2) a {
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.menu li:nth-child(3) a {
+    padding-right: 13px;
+    padding-left: 13px;
+}
+
+.menu li:nth-child(4) a {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.menu li:nth-child(5) a {
+    padding-right: 8px;
+    padding-left: 8px;
 }
 
 .menu li a:hover {
@@ -204,7 +236,7 @@ body {
 
 .basket::before {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 0;
     width: 21px;
     height: 17px;
@@ -513,7 +545,7 @@ body {
 .catalog h2 {
     position: relative;
     width: 154px;
-    margin: 3px 0 13px;
+    margin: 1px 0 15px;
     padding: 2px 0 0 27px;
     border: 1px solid #8b979c;
     border-radius: 14px;
@@ -535,7 +567,7 @@ body {
 }
 
 .catalog section {
-    margin: 0 0 0 2px;
+    margin: -1px 0 0 2px;
 }
 
 .catalog section h3 {
@@ -644,7 +676,7 @@ body {
 }
 
 .brand-filter fieldset {
-    padding: 0 0 11px;
+    padding: 0 0 8px;
 }
 
 .brand-filter form legend {
@@ -717,6 +749,7 @@ body {
     background: -moz-linear-gradient(#206988 0%, #114165 59%, #0c3256 100%);
     background: -webkit-linear-gradient(#206988 0%, #114165 59%, #0c3256 100%);
     background: linear-gradient(#206988 0%, #114165 59%, #0c3256 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: #fff;
     font-family: Arial, sans-serif;
     font-size: 11px;
     letter-spacing: .5px;
@@ -758,8 +791,20 @@ main {
 
 .item {
     width: 138px;
-    margin: 15px;
+    margin: 15px 16px 14px 13px;
     text-align: center;
+}
+
+.item img {
+    margin-top: 1px;
+}
+
+.item:nth-of-type(3n+1) img {
+    margin-left: -6px;
+}
+
+.item:nth-of-type(3n+2) img {
+    margin-left: -6px;
 }
 
 .title {
@@ -781,7 +826,7 @@ main {
 .photo {
     display: block;
     height: 118px;
-    padding: 4px 0;
+    padding: 4px 0 5px;
     border: 1px solid #a7b1b4;
     border-radius: 8px;
     background-color: #fff;
@@ -789,7 +834,7 @@ main {
 }
 
 .price {
-    margin: 5px 0 -2px;
+    margin: 5px 0 -2px 4px;
     color: #114165;
     font: italic bold 16px/13px "Arial", sans-serif;
 }
@@ -801,7 +846,7 @@ main {
 /* Brands banner */
 
 .brands {
-    margin: 38px 0 25px;
+    margin: 37px 0 25px -2px;
     font-size: 0;
     line-height: 0;
     text-align: center;
